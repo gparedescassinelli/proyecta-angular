@@ -1,0 +1,45 @@
+<div class="container" style="background-color: transparent;">
+  <h2 class="featuredproject-title">Proyectos Destacados</h2>
+
+  <div style="height: 590px">
+    <swiper
+    [slidesPerView]="slidesPerView"
+      [spaceBetween]="15"
+      [navigation]="{
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next'
+      }"
+      [pagination]="{ clickable: true }"
+      style="padding-bottom: 60px;"
+    >
+      <ng-template swiperSlide
+        ><img
+          src="../../../assets/D-CENTROS COMERCIALES.jpg"
+          alt=""
+          class="img-proyecto"
+          loading="lazy"
+      /></ng-template>
+      <ng-template swiperSlide
+        ><img src="../../../assets/D-HOTELES.jpg" alt="" class="img-proyecto"
+        loading="lazy"
+      /></ng-template>
+      <ng-template swiperSlide
+        ><img src="../../../assets/D-HOSPITALES.jpg" alt="" class="img-proyecto"
+        loading="lazy"
+      /></ng-template>
+      <ng-template swiperSlide
+        ><img src="../../../assets/D-CONDOMINIOS.jpg" alt="" class="img-proyecto"
+        loading="lazy"
+      /></ng-template>
+      <ng-template swiperSlide
+        ><img src="../../../assets/D-INSTITUCIONALES.jpg" alt="" class="img-proyecto"
+        loading="lazy"
+      /></ng-template>
+    </swiper>
+    <div class="swiper-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+    <div class="swiper-button-next"><i class="fa-solid fa-angle-right"></i></div>
+  
+  </div>
+
+  <!--   <br /><br /><br /><br /><br /><br /><br /><br /> -->
+</div>
