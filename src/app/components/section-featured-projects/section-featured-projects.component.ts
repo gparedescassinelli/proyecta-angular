@@ -24,7 +24,7 @@ export class SectionFeaturedProjectsComponent implements OnInit,AfterViewInit {
    /*  this.setSlidesPerView(); */
    const screenWidth = window.innerWidth;
 
-    if (screenWidth < 640) {
+    if (screenWidth < 750) {
       this.slidesPerView = 1;
       this.spaceBetween = 10;
     }else if (screenWidth < 1400) {
