@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,PLATFORM_ID, Inject} from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Title } from '@angular/platform-browser';
 import * as Aos from 'aos';
 @Component({
   selector: 'app-home',
@@ -7,10 +9,13 @@ import * as Aos from 'aos';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(PLATFORM_ID) private platformId:Object,private title:Title) { }
 
   ngOnInit(): void {
-    Aos.init();
+    this.title.setTitle('Proyecta')
+    if(isPlatformBrowser(this.platformId)){
+      Aos.init();
+    }
   }
 
 }

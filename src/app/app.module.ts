@@ -14,7 +14,7 @@ import { QuienesSomosComponent } from './pages/quienes-somos/quienes-somos.compo
 @NgModule({
   declarations: [AppComponent, LayoutBaseComponent, HomeComponent, QuienesSomosComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ComponentsModule,
     SwiperModule,

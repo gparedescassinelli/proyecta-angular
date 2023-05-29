@@ -1,13 +1,14 @@
+import { QuienesSomosComponent } from './pages/quienes-somos/quienes-somos.component';
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import { LayoutBaseComponent } from './layout/layout-base/layout-base.component'
 import { HomeRoutingModule } from './pages/home/home-routing.module'
 import { StartComponent } from './components/start/start.component'
+import { HomeComponent } from './pages/home/home.component'
 
 const routes: Routes = [
-  {
+  /* {
     path: '',
-   /*  StartComponent */
     component: LayoutBaseComponent,
     children: [
       {
@@ -16,6 +17,15 @@ const routes: Routes = [
           import('./pages/home/home.module').then((m) => m.HomeModule),
       },
     ],
+  }, */
+  {
+    path: '',
+    component: HomeComponent,
+  },
+  {
+    path: 'quienes-somos',
+   /*  StartComponent */
+    component: QuienesSomosComponent,
   },
   {
     path: '**',
@@ -25,7 +35,9 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    initialNavigation: 'enabledBlocking'
+})],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

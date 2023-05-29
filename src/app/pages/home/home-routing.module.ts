@@ -7,9 +7,9 @@ const routes: Routes = [
   {
     path:'',component:HomeComponent
   },
-  {
+  /* {
     path:'quienes-somos',component:QuienesSomosComponent
-  },
+  }, */
 ];
 
 @NgModule({
