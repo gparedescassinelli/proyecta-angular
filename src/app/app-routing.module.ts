@@ -22,11 +22,11 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
   },
-  {
+ /*  {
     path: 'quienes-somos',
-   /*  StartComponent */
+ 
     component: QuienesSomosComponent,
-  },
+  }, */
   {
     path: '**',
     redirectTo: '',

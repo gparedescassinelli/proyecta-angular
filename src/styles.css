@@ -65,6 +65,10 @@ html {
     line-height: 0;
     width: auto;
   }
+  .navbar-titulo img{
+    width: 200px !important;
+    height: 50px;
+  }
   .title {
     color: var(--color-primary) !important;
     font-weight: 800 !important;
@@ -493,7 +497,7 @@ html {
     }
   }
   .footer {
-    background-color: var(--color-primary);
+    background-color: #4f4f4f;
     padding-top: 20px;
     color: var(--color-white);
   }
