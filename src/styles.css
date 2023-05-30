@@ -50,10 +50,11 @@ html {
     .btn-proyecta {
       display: block;
       margin: 0 auto;
+      width: 311px !important;
     }
     .btn-proyecta-team {
-      width: 90%;
-      height: 100%;
+      width: 277px !important;
+      height: 55px !important;
       display: block;
       margin: 0 auto;
       padding: 10px 0;
@@ -66,7 +67,7 @@ html {
     width: auto;
   }
   .navbar-titulo img{
-    width: 200px !important;
+    width: 100% !important;
     height: 50px;
   }
   .title {
